@@ -1,0 +1,10 @@
+{
+    "configurations": [
+        {
+            "type": "command",
+            "name": "Game Engine",
+            "program": "C:/dragonruby-windows-amd64/dragonruby.exe",
+        },
+
+    ]
+}

@@ -1,12 +1,9 @@
-# Remove the pound sign and leading space for the properties below before publishing your game.
-# devid=myname
-# devtitle=My Name
-# gameid=mygame
-# gametitle=My Game
-# version=0.1
-# icon=metadata/icon.png
-
-# === Flags available at all licensing tiers ===
+devid=Elerphore
+devtitle=Eremey Malinovsky
+gameid=mygame
+gametitle=Something Something Cards?
+version=0.1
+icon=metadata/icon.png
 
 # Defines the render scale quality for sprites. scale_quality=0 (default) is nearest neighbor, scale_quality=1 is linear, scale_quality=2 is antialiased.
 # scale_quality=0
@@ -14,10 +11,10 @@
 # === Flags available in DragonRuby Game Toolkit Pro ====
 
 # Uncomment the entry below to bytecode compile your Ruby code
-# compile_ruby=false
+compile_ruby=false
 
 # Uncomment the entry below to specify the package name for your APK
-# packageid=org.dev.gamename
+packageid=ru.elerphore.SSCards
 
 # Setting this property to true will enable High DPI rendering (try in combination with scale_quality to see what looks best)
 # highdpi=false
