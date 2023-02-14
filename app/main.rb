@@ -1,19 +1,24 @@
+
+$screen_width = 1280
+$screen_height = 720
+
+$padding_vertical = 15
+$padding_horizontal = 15
+
+$cards_quantity = 2
+$current_game_state = :game
+
+$card_with = 150
+$card_height = 300
 def tick args
+  top_bar_render args
 
-  args.outputs.labels  << [640, 540, 'Hello World!', 5, 1]
-  args.outputs.labels  << [640, 500, 'Docs located at ./docs/docs.html and 100+ samples located under ./samples', 5, 1]
-  args.outputs.labels  << [640, 460, 'Join the Discord server! https://discord.dragonruby.org', 5, 1]
-
-  args.outputs.sprites << { x: 576,
-                            y: 280,
-                            w: 128,
-                            h: 101,
-                            path: 'dragonruby.png',
-                            angle: args.state.tick_count }
-
-  args.outputs.labels  << { x: 640,
-                            y: 60,
-                            text: './mygame/app/main.rb',
-                            size_enum: 5,
-                            alignment_enum: 1 }
+  args.outputs.borders << [470, 400, $card_with, $card_height]
+  args.outputs.borders << [660, 400, $card_with, $card_height]
 end
+
+def top_bar_render args
+  args.outputs.labels <<  [10, 710, "Level 1"]
+end
+
+
